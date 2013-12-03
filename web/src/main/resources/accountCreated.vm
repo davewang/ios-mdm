@@ -1,0 +1,5 @@
+${message}
+
+Username: ${user.username}
+
+Login at: ${applicationURL}

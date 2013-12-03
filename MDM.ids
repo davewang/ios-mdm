@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="mysql" product="MySQL" version="5.5.34" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )" uuid="d84e03ff-6207-453c-9095-17610445326a">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/MDM</jdbc-url>
+    <user-name>root</user-name>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>

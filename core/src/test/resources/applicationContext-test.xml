@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- AOP Advisor -->
+    <bean id="userSecurityInterceptor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="userSecurityAdvice"/>
+        <property name="patterns">
+            <list>
+                <value>.*saveUser</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Advice Class -->
+    <bean id="userSecurityAdvice" class="com.sinonet.mdm.service.UserSecurityAdvice"/>
+
+    <bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.ShaPasswordEncoder"/>
+   
+    <bean id="userManager" class="com.sinonet.mdm.service.impl.UserManagerImpl">
+        <property name="passwordEncoder" ref="passwordEncoder" />
+    </bean>
+
+    <bean id="target" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces" value="com.sinonet.mdm.service.UserManager"/>
+        <property name="interceptorNames">
+            <list>
+                <idref local="userSecurityInterceptor"/>
+                <idref local="userManager"/>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="persistentPasswordTokenManager" class="com.sinonet.mdm.service.impl.PersistentPasswordTokenManagerImpl" autowire="default" />
+    
+    <bean id="persistentPasswordTokenManager.userManager" parent="userManager">
+    	<property name="passwordTokenManager" ref="persistentPasswordTokenManager"></property>
+    </bean>
+</beans>    
