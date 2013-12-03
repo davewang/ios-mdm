@@ -23,8 +23,8 @@ To get started, complete the following steps:
 3. From the command line, cd into the payload directory and run "mvn install".
 
 4. From the command line, cd into the web directory and run "mvn jetty:run".
-## before need config https with web/src/main/resources/certs/make_certs.sh to make cert 
-## need config push cert with http://www.softhinker.com/in-the-news/iosmdmvendorcsrsigning
+> before need config https with web/src/main/resources/certs/make_certs.sh to make cert 
+> need config push cert with http://www.softhinker.com/in-the-news/iosmdmvendorcsrsigning
 
 5. View the application at http://localhost:8080 or https://localhost:8448
 
