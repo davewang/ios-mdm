@@ -17,18 +17,6 @@
 			<string>F6ACD568-F6D6-44BE-8064-972B8A4FA61F</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
-			<key>allowSimple</key>
-			<false/>
-			<key>forcePIN</key>
-			<true/>
-			<key>maxGracePeriod</key>
-			<integer>0</integer>
-			<key>maxInactivity</key>
-			<integer>1</integer>
-			<key>minLength</key>
-			<integer>8</integer>
-			<key>requireAlphanumeric</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>PayloadDescription</key>
@@ -43,113 +31,7 @@
 			<string>39A8484A-C95E-4864-A245-4B4DD98C3CFC</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
-			<key>allowAccountModification</key>
-			<false/>
-			<key>allowAddingGameCenterFriends</key>
-			<true/>
-			<key>allowAirDrop</key>
-			<false/>
-			<key>allowAppInstallation</key>
-			<false/>
-			<key>allowAppRemoval</key>
-			<false/>
-			<key>allowAssistant</key>
-			<false/>
-			<key>allowAssistantWhileLocked</key>
-			<true/>
-			<key>allowBookstore</key>
-			<false/>
-			<key>allowBookstoreErotica</key>
-			<true/>
-			<key>allowCamera</key>
-			<false/>
-			<key>allowChat</key>
-			<false/>
-			<key>allowCloudBackup</key>
-			<false/>
-			<key>allowCloudDocumentSync</key>
-			<false/>
-			<key>allowCloudKeychainSync</key>
-			<false/>
-			<key>allowDiagnosticSubmission</key>
-			<false/>
-			<key>allowExplicitContent</key>
-			<true/>
-			<key>allowFindMyFriendsModification</key>
-			<false/>
-			<key>allowFingerprintForUnlock</key>
-			<false/>
-			<key>allowGameCenter</key>
-			<false/>
-			<key>allowGlobalBackgroundFetchWhenRoaming</key>
-			<false/>
-			<key>allowHostPairing</key>
-			<false/>
-			<key>allowInAppPurchases</key>
-			<false/>
-			<key>allowLockScreenControlCenter</key>
-			<false/>
-			<key>allowLockScreenNotificationsView</key>
-			<false/>
-			<key>allowLockScreenTodayView</key>
-			<false/>
-			<key>allowMultiplayerGaming</key>
-			<true/>
-			<key>allowOTAPKIUpdates</key>
-			<false/>
-			<key>allowOpenFromManagedToUnmanaged</key>
-			<false/>
-			<key>allowOpenFromUnmanagedToManaged</key>
-			<false/>
-			<key>allowPassbookWhileLocked</key>
-			<false/>
-			<key>allowPhotoStream</key>
-			<false/>
-			<key>allowSafari</key>
-			<false/>
-			<key>allowScreenShot</key>
-			<false/>
-			<key>allowSharedStream</key>
-			<false/>
-			<key>allowSharedStreamReceiveInvitation</key>
-			<true/>
-			<key>allowSharedStreamSendInvitation</key>
-			<true/>
-			<key>allowUIConfigurationProfileInstallation</key>
-			<false/>
-			<key>allowUntrustedTLSPrompt</key>
-			<false/>
-			<key>allowVideoConferencing</key>
-			<true/>
 			<key>allowVoiceDialing</key>
-			<false/>
-			<key>allowYouTube</key>
-			<false/>
-			<key>allowiTunes</key>
-			<false/>
-			<key>forceAssistantProfanityFilter</key>
-			<false/>
-			<key>forceEncryptedBackup</key>
-			<false/>
-			<key>forceITunesStorePasswordEntry</key>
-			<false/>
-			<key>ratingApps</key>
-			<integer>1000</integer>
-			<key>ratingMovies</key>
-			<integer>1000</integer>
-			<key>ratingRegion</key>
-			<string>us</string>
-			<key>ratingTVShows</key>
-			<integer>1000</integer>
-			<key>safariAcceptCookies</key>
-			<integer>1</integer>
-			<key>safariAllowAutoFill</key>
-			<true/>
-			<key>safariAllowJavaScript</key>
-			<true/>
-			<key>safariAllowPopups</key>
-			<true/>
-			<key>safariForceFraudWarning</key>
 			<false/>
 		</dict>
 	</array>
